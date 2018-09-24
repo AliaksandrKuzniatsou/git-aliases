@@ -21,3 +21,14 @@ git config --global alias.[alias] [command]
 ```
 
 Check the [documentation](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
+
+## Formatting 'git log' output
+
+Run in console following comands:
+
+```
+git config --global pretty.verminal format:'%C(#FFCC00)%h%C(reset) %cd | %s%C(#5ac8fa)%d%C(reset) [%an]'
+git config --global format.pretty verminal
+
+git config --global log.date format-local:'%F %R'
+```
